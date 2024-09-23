@@ -38,4 +38,6 @@ $conn -> close();
 ?>
 <br>
 <a href="create_professor.php">Inserir novo registro de professor.</a> <br>
-<a href="create_aula.php">Inserir novo registro de aula.</a>
+<a href="create_aula.php">Inserir novo registro de aula.</a> <br>
+
+<a href="create_professor.php"> <button> Adicionar Registro </button></a>
