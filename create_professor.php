@@ -37,5 +37,6 @@
         <input type="text" name="salario">
         <input type="submit" value="ENVIAR DADOS">
     </form>
+    <a href="read.php"><button>VER REGISTROS</button></a>
 </body>
 </html>
