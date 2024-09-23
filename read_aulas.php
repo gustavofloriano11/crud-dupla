@@ -10,19 +10,19 @@ if($result -> num_rows > 0){
     echo "<table border='1'>
         <tr>
             <th> ID </th>
-            <th> Nome </th>
-            <th> Email </th>
-            <th> Telefone </th>
-            <th> Salário </th>
+            <th> Nº Sala </th>
+            <th> Materia </th>
+            <th> Capacidade </th>
+            <th> Assunto </th>
             <th> Ações </th>
         </tr>";
         while($row = $result -> fetch_assoc()){
             echo "<tr>
-                    <td> {$row['id_professor']} </td>
-                    <td> {$row['nome']} </td>
-                    <td> {$row['email']} </td>
-                    <td> {$row['telefone']} </td>
-                    <td> {$row['salario']} </td>
+                    <td> {$row['id_aula']} </td>
+                    <td> {$row['sala']} </td>
+                    <td> {$row['materia']} </td>
+                    <td> {$row['capacidade']} </td>
+                    <td> {$row['assunto']} </td>
                     <td>
                         <a href='update.php?id={$row['id']}'>Editar</a> |
                         <a href='delete.php?id={$row['id']}'>Excluir</a>
@@ -40,4 +40,6 @@ $conn -> close();
 <a href="create_professor.php">Inserir novo registro de professor.</a> <br>
 <a href="create_aula.php">Inserir novo registro de aula.</a> <br>
 
-<a href="create_professor.php"> <button> Adicionar Registro </button></a>
+<a href="create_professor.php"> <button> Adicionar novo professor </button></a>
+<a href="create_aulas.php"> <button> Adicionar nova aula </button></a>
+<a href="read_aulas.php"> <button> Ver registros das aulas </button></a>
