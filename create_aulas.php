@@ -3,12 +3,13 @@
     include 'db.php';
 
     if($_SERVER['REQUEST_METHOD'] == 'POST'){
-        $nome = $_POST['nome'];
-        $email = $_POST['email'];
-        $telefone = $_POST['telefone'];
-        $salario = $_POST['salario'];
+        $materia = $_POST['materia'];
+        $sala = $_POST['sala'];
+        $capacidade = $_POST['capacidade'];
+        $assunto = $_POST['assunto'];
+        $tempo = $_POST['hora'];
 
-        $sql = "INSERT INTO professores (nome, email, telefone, salario) VALUES ('$nome', '$email', '$telefone', '$salario')";
+        $sql = "INSERT INTO aulas (sala, materia, capacidade, assunto) VALUES ('$materia', '$sala', '$telefone', '$salario')";
 
         if($conn -> query($sql) === TRUE){
            echo 'NOVO PROFESSOR ADICIONADO'; 
@@ -27,7 +28,7 @@
     <title>Inserir Dados - AULA</title>
 </head>
 <body>
-    <h2>INSERIR DADOS DO PROFESSOR:</h2>
+    <h2>INSERIR DADOS DA AULA:</h2>
     <form method="POST">
         <label for="materia">Matéria:</label>
         <input type="text" name="materia">
@@ -37,8 +38,10 @@
         <input type="text" name="capacidade">
         <label for="assunto">Assunto da Aula:</label>
         <input type="text" name="assunto">
+        <label for="hora">Tempo da Aula:</label>
+        <input type="time" name="hora">
         <input type="submit" value="ENVIAR DADOS">
     </form>
-    <a href="read.php"><button>VER REGISTROS</button></a>
+    <a href="read_professores.php"><button>VER REGISTROS</button></a>
 </body>
 </html>
