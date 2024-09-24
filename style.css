@@ -1,0 +1,28 @@
+h2{
+  color: blanchedalmond;
+}
+
+label{
+    color: lightblue;
+}
+
+input{
+    height: 16px;
+    background-color: lightblue;
+    border-radius: 200px;
+    border: 4px;
+    border-color: white;
+}
+
+.flex{
+    display: flex;
+}
+
+.menu{
+    background-color: lightblue;
+    border-radius: 200px;
+    border-color: white;
+    border: none;
+    width: 70px;
+    height: 30px;
+}
