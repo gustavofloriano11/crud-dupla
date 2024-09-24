@@ -20,8 +20,8 @@ if($result -> num_rows > 0){
                 <td> <?php echo $row['id_aula'];?> </td>
                 <td> <?php echo $row['hora_aula'];?> </td>
                 <td>
-                    <a href='update_aulas.php?id_aula=<?php echo $row['id_aula']?>'>Editar</a> |
-                    <a href='delete_aulas.php?id_aula=<?php echo $row['id_aula']?>'>Excluir</a>
+                    <a href='update_diario.php?id_diario=<?php echo $row['id_diario']?>'>Editar</a> |
+                    <a href='delete_diario.php?id_diario=<?php echo $row['id_diario']?>'>Excluir</a>
                 </td>
             </tr>
        <?php } 
