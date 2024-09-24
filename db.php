@@ -1,11 +1,10 @@
 <?php
-     $servername = "127.0.0.1";
+     $servername = "localhost";
      $username = "root";
-     $password = "";
+     $password = "root";
      $dbname = "escola";
-     $port = "3308";
 
-     $conn = new mysqli($servername, $username, $password, $dbname, $port);
+     $conn = new mysqli($servername, $username, $password, $dbname);
      if($conn -> connect_error){
         die ('Conexão falhou' . $conn -> connect_error);
      }
