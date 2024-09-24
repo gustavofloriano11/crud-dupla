@@ -17,27 +17,27 @@ if($result -> num_rows > 0){
             <th> Salário </th>
             <th> Ações </th>
         </tr>";
-        while($row = $result -> fetch_assoc()){
-            echo "<tr>
-                    <td> {$row['id_professor']} </td>
-                    <td> {$row['nome']} </td>
-                    <td> {$row['idade']} </td>
-                    <td> {$row['email']} </td>
-                    <td> {$row['telefone']} </td>
-                    <td> {$row['salario']} </td>
-                    <td>
-                        <a href='update.php?id={$row['id']}'>Editar</a> |
-                        <a href='delete.php?id={$row['id']}'>Excluir</a>
-                    </td>
-                </tr>";
-        }
+        while($row = $result -> fetch_assoc()){ ?>
+            <tr>
+                <td> <?php echo $row['id_professor'];?> </td>
+                <td> <?php echo $row['nome'];?> </td>
+                <td> <?php echo $row['idade'];?> </td>
+                <td> <?php echo $row['email'];?> </td>
+                <td> <?php echo $row['telefone'];?> </td>
+                <td> <?php echo $row['salario'];?> </td>
+                <td>
+                    <a href='update_professor.php?id_professor=<?php echo $row['id_professor']?>'>Editar</a> |
+                    <a href='deletar_professor.php?id_professor=<?php echo $row['id_professor']?>'>Excluir</a>
+                </td>
+            </tr>
+       <?php } 
     echo "</table>";
-}else{
+} else {
     echo "Nenhum registro encontrado.";
 }
 $conn -> close();
-
 ?>
+
 <br>
 
 <a href="create_professor.php"> <button> Adicionar novo professor </button></a> <br>
