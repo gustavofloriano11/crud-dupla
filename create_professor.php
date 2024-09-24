@@ -23,10 +23,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Inserir Dados</title>
 </head>
 <body>
-    <h2>INSERIR DADOS DO PROFESSOR:</h2>
+    <div class = "flex">
+        <h2>INSERIR DADOS DO PROFESSOR:</h2>
+    </div>
     <form method="POST">
         <label for="nome">Professor(a):</label>
         <input type="text" name="nome">
@@ -40,6 +43,6 @@
         <input type="text" name="idade">
         <input type="submit" value="ENVIAR DADOS">
     </form>
-    <a href="index.php"> <button> Menu </button></a>
+    <a href="index.php"> <button class = "menu"> Menu </button></a>
 </body>
 </html>
