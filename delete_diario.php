@@ -24,6 +24,6 @@ $conn -> close();
     <title>Document</title>
 </head>
 <body>
-    <a href="read_aulas.php"> <button>Voltar</button> </a>
+    <a href="index.php"> <button>Voltar</button> </a>
 </body>
 </html>
