@@ -1,3 +1,31 @@
+body{
+    background-color: snow;
+}
+#flexivel{
+    background-color: rgb(255, 255, 255);
+    width: 98%;
+    height: 850px;
+    display: flex; 
+    justify-content: center; /*alinha a div filha no centro horizontal */
+    align-items: center; /* alinha a div filha no centro vertical */
+    
+}
+.botao{
+    font-weight: bold;
+    background-color: rgb(240, 240, 240);
+    font-size: 12px;
+    color: rgb(0, 0, 0);
+    margin-bottom: 20px;
+    border-radius: 200px;
+    margin-right: 50px;
+    width: 200px;
+    height: 50px;
+    border: 2px solid rgb(226, 226, 226)
+}
+.botao:hover{
+    background-color: rgb(114, 114, 114);
+    color: white;
+}
 h2{
   color: blanchedalmond;
 }
