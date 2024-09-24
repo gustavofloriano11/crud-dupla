@@ -15,6 +15,8 @@
         <a href="create_aulas.php"> <button> Adicionar Aulas </button> </a>
         <a href="read_aulas.php"> <button> Visualizar Aulas </button> </a>
         <a href="read_professores.php"> <button> Visualizar Professores </button> </a>
+        <a href="create_diario.php"> <button> Adicionar Diario </button> </a>
+        <a href="read_diario.php"> <button> Visualizar Diario </button> </a>
     </div>
 </body>
 </html>

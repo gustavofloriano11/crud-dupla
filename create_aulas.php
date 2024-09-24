@@ -7,7 +7,6 @@
         $sala = $_POST['sala'];
         $capacidade = $_POST['capacidade'];
         $assunto = $_POST['assunto'];
-        $tempo = $_POST['hora'];
 
         $sql = "INSERT INTO aulas (sala, materia, capacidade, assunto) VALUES ('$materia', '$sala', '$capacidade', '$assunto')";
 
@@ -38,8 +37,6 @@
         <input type="text" name="capacidade">
         <label for="assunto">Assunto da Aula:</label>
         <input type="text" name="assunto">
-        <label for="hora">Tempo da Aula:</label>
-        <input type="time" name="hora">
         <input type="submit" value="ENVIAR DADOS">
     </form>
     <a href="index.php"> <button> Menu </button></a>
