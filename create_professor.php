@@ -6,8 +6,9 @@
         $email = $_POST['email'];
         $telefone = $_POST['telefone'];
         $salario = $_POST['salario'];
+        $idade = $_POST['idade'];
 
-        $sql = "INSERT INTO professores (nome, email, telefone, salario) VALUES ('$nome', '$email', '$telefone', '$salario')";
+        $sql = "INSERT INTO professores (nome, email, telefone, salario, idade) VALUES ('$nome', '$email', '$telefone', '$salario', '$idade')";
 
         if($conn -> query($sql) === TRUE){
            echo 'NOVO PROFESSOR ADICIONADO'; 
@@ -32,9 +33,11 @@
         <label for="email">Email:</label>
         <input type="email" name="email">
         <label for="telefone">Telefone:</label>
-        <input type="text" name="telefone" placeholder="47 9 99999999">
+        <input type="text" name="telefone" placeholder="47919999999">
         <label for="salario">Salário:</label>
         <input type="text" name="salario">
+        <label for="idade">Idade:</label>
+        <input type="text" name="idade">
         <input type="submit" value="ENVIAR DADOS">
     </form>
     <a href="read_professores.php"><button>VER REGISTROS</button></a>
