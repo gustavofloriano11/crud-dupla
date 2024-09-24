@@ -29,10 +29,10 @@
 <body>
     <h2>INSERIR DADOS - DIÁRIO:</h2>
         <form method="POST">
-            <label for="id_professor_teste">ID do Professor:</label>
-            <input type="number" name="id_professor_teste">
+            <label for="id_professor_teste">ID do Professor(a):</label>
+            <input type="text" name="id_professor_teste">
             <label for="id_aula_teste">ID da Aula:</label>
-            <input type="number" name="id_aula_teste">
+            <input type="text" name="id_aula_teste">
             <label for="hora_aula">Duração da Aula:</label>
             <input type="time" name="hora_aula">
             <input type="submit" value="ENVIAR DADOS">
