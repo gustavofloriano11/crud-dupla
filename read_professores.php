@@ -1,7 +1,6 @@
 <?php
     include 'db.php';
 
-
 $sql = "SELECT * FROM professores";
 
 $result = $conn -> query($sql);
