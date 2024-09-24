@@ -40,6 +40,6 @@
         <input type="text" name="idade">
         <input type="submit" value="ENVIAR DADOS">
     </form>
-    <a href="read_professores.php"><button>VER REGISTROS</button></a>
+    <a href="index.php"> <button> Menu </button></a>
 </body>
 </html>

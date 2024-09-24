@@ -9,7 +9,7 @@
         $assunto = $_POST['assunto'];
         $tempo = $_POST['hora'];
 
-        $sql = "INSERT INTO aulas (sala, materia, capacidade, assunto) VALUES ('$materia', '$sala', '$telefone', '$salario')";
+        $sql = "INSERT INTO aulas (sala, materia, capacidade, assunto) VALUES ('$materia', '$sala', '$capacidade', '$assunto')";
 
         if($conn -> query($sql) === TRUE){
            echo 'NOVO PROFESSOR ADICIONADO'; 
@@ -42,6 +42,6 @@
         <input type="time" name="hora">
         <input type="submit" value="ENVIAR DADOS">
     </form>
-    <a href="read_professores.php"><button>VER REGISTROS</button></a>
+    <a href="index.php"> <button> Menu </button></a>
 </body>
 </html>

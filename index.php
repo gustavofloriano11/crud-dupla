@@ -11,7 +11,7 @@
 </head>
 <body>
     <div>
-        <a href="create_professores.php"> <button> Adicionar Professores </button> </a>
+        <a href="create_professor.php"> <button> Adicionar Professores </button> </a>
         <a href="create_aulas.php"> <button> Adicionar Aulas </button> </a>
         <a href="read_aulas.php"> <button> Visualizar Aulas </button> </a>
         <a href="read_professores.php"> <button> Visualizar Professores </button> </a>
