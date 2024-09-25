@@ -1,5 +1,5 @@
 <?php
-    include 'db.php';
+    include '../database/db.php';
 
     $id = $_GET['id_aula'];
 
@@ -30,6 +30,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
     <title>ATUALIZAR DADOS - AULA</title>
 </head>
 <body>
@@ -45,6 +46,6 @@
         <input type="text" name="assunto">
         <input type="submit" value="ATUALIZAR DADOS">
     </form>
-    <a href="index.php"> <button> Menu </button></a>
+    <a href="../index.php"> <button class = "menu"> Menu </button></a>
 </body>
 </html>

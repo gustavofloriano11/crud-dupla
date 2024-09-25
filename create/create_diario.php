@@ -1,5 +1,5 @@
 <?php
-    include 'db.php';
+    include '../database/db.php';
 
     if($_SERVER['REQUEST_METHOD'] == 'POST'){
         $duracao = $_POST['hora_aula'];
@@ -38,5 +38,6 @@
             <input type="time" name="hora_aula">
             <input type="submit" value="ENVIAR DADOS">
         </form>
+        <a href="../index.php"> <button class = "menu"> Menu </button></a>
 </body>
 </html>

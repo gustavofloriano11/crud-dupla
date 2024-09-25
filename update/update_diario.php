@@ -1,5 +1,5 @@
 <?php
-    include 'db.php';
+    include '../database/db.php';
  
     if($_SERVER['REQUEST_METHOD'] == 'POST'){
         $id_diario = $_POST['id_diario'];
@@ -23,7 +23,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ATUALIZAR DADOS - DIÁRIO</title>
+    <link rel="stylesheet" href="style/style.css">
+    <title>ATUALIZAR DADOS - DIÁRIO</title> 
 </head>
 <body>
     <h2>ATUALIZAR DADOS DO DIÁRIO:</h2>
@@ -38,6 +39,6 @@
             <input type="time" name="duracao">
             <input type="submit" value="ENVIAR DADOS">
         </form>
-    <a href="index.php"> <button> Menu </button></a>
+        <a href="../index.php"> <button class = "menu"> Menu </button></a>
 </body>
 </html>

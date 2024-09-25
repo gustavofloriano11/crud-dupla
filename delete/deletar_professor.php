@@ -1,5 +1,5 @@
 <?php
-    include 'db.php';
+    include '../database/db.php';
 
     $id_professor = $_GET['id_professor'];
 
@@ -17,10 +17,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
     <title>Deletar Professor</title>
 </head>
 <body>
     <br>
-    <a href="read_professores.php"><button>Voltar para o MENU</button></a>
+    <a href="../index.php"> <button class = "menu"> Menu </button></a>
 </body>
 </html>

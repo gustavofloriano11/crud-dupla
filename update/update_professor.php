@@ -1,5 +1,6 @@
 <?php
-    include 'db.php';
+    include '../database/db.php';
+    
     $id_professor = $_GET['id_professor'];
  
     if($_SERVER['REQUEST_METHOD'] == 'POST'){
@@ -25,6 +26,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
     <title>ATUALIZAR DADOS - PROFESSOR</title>
 </head>
 <body>
@@ -42,5 +44,6 @@
             <input type="text" name="idade">
             <input type="submit" value="ENVIAR DADOS">
         </form>
+        <a href="../index.php"> <button class = "menu"> Menu </button></a>
 </body>
 </html>
